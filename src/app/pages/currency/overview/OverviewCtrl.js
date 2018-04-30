@@ -54,6 +54,7 @@
                 }).then(function (res) {
                     if (res.status === 200) {
                         $scope.currencyOverviewUsersData = res.data.data;
+                        console.log($scope.currencyOverviewUsersData)
                     }
                 }).catch(function (error) {
                     $scope.loadingUsers = false;

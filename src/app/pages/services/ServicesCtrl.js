@@ -24,7 +24,7 @@
 
         $scope.getServices = function(){
           $scope.loadingServices = true;
-            $http.get(environmentConfig.API + '/admin/services/?active=true', {
+            $http.get(environmentConfig.API + '/admin/services/?enabled=true', {
                 headers: {
                     'Content-Type': 'application/json',
                     'Authorization': vm.token
